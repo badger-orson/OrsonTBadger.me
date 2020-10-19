@@ -1,0 +1,257 @@
+.resume-header-grid
+    margin-top: 3em
+    display: grid
+    grid-template-rows: auto
+    grid-template-columns: auto auto
+    grid-template-areas: "c1 c2"
+    font-family: $avenir-reg
+    grid-column-gap: 2em
+
+    .header-col-1
+        grid-area: c1
+        padding-top: 2em
+        padding-left: 1.5em
+        .name 
+            color: $purple
+            font-weight: 700
+            font-size: 30px
+            
+        .location 
+            font-weight: 100
+            margin-bottom: 1.5em
+            
+
+        .resume 
+            margin-left: 2em
+            font-size: 50px
+            color: $purple
+            text-shadow: 2px 1.5px 2px gray
+            font-family: $avenir-book
+
+
+
+    .header-col-2
+        grid-area: c2
+        padding-top: 2em
+
+        .contact 
+            color: $purple
+            font-size: 1.5em
+            
+        .contact-website 
+            text-decoration: none
+            color: black
+            
+        .contact-email 
+            color: darken($dark-gray, 25% )
+            font-weight: 500
+            
+        .contact-linkedin 
+            
+
+
+.me-grid
+    margin-top: 3em
+    display: grid
+    color: $dark-gray
+    font-family: $avenir-reg
+    grid-template-rows: auto
+    grid-template-columns: auto auto
+    grid-template-areas: "me words"
+    margin-bottom: 2em
+
+    img.me
+        width: 20em
+        grid-area: me
+        justify-self: right
+        padding-right: 3em
+
+    .grid-words
+        margin-left: 1em
+        grid-area: words
+        display: grid
+        grid-template-areas: "words-p words-p words-p "  "c1 c2 c3"
+        grid-template-rows: auto auto
+        grid-template-columns: auto auto auto
+        grid-column-gap: 1em
+        
+        .profile
+            padding-top: 4em
+            color: $purple
+            font-size: 1.5em
+            grid-area: words-p
+
+            p.words
+                font-size: .6em
+                color: $dark-gray
+
+
+        ul
+            text-decoration: 
+
+        p.title
+            color: $purple
+            grid-area: title
+
+        p.li
+            margin-bottom: 0px
+            margin-top: 0px
+
+        .col-1
+           align-self: end
+            grid-area: c1
+            
+        .col-2
+            padding: 0px
+            grid-area: c2
+            align-self: end
+
+        .col-3
+            padding: 0px
+            grid-area: c3
+            align-self: end
+
+p.title
+    color: $purple
+
+.grid-expperience
+    margin-bottom: 3em
+    margin-left: 20vw
+    margin-right: 10vw
+    color: $dark-gray
+    font-family: $avenir-reg
+
+    .rp
+        margin-top: .2em
+ 
+
+
+//Small and medium format
+@media (max-width: 1200px)
+    .resume-header-grid
+        margin-top: 3em
+        display: grid
+        grid-template-rows: auto
+        grid-template-columns: auto auto
+        grid-template-areas: "c1" "c2"
+        font-family: $avenir-reg
+        grid-column-gap: 2em
+
+        .header-col-1
+            grid-area: c1
+            padding-top: 2em
+            padding-left: 1.5em
+            .name 
+                color: $purple
+                font-weight: 700
+                font-size: 30px
+                
+            .location 
+                font-weight: 100
+                margin-bottom: 1.5em
+                
+
+            .resume 
+                margin-left: 2em
+                font-size: 50px
+                color: $purple
+                text-shadow: 2px 1.5px 2px gray
+                font-family: $avenir-book
+
+
+
+        .header-col-2
+            grid-area: c2
+            padding-top: 2em
+            padding-left: 2em
+            margin-bottom: 2em
+
+            .contact 
+                color: $purple
+                font-size: 1.5em
+                
+            .contact-website 
+                text-decoration: none
+                color: black
+                
+            .contact-email 
+                color: darken($dark-gray, 25% )
+                font-weight: 500
+                
+            .contact-linkedin 
+                
+
+
+    .me-grid
+        margin-top: 3em
+        display: grid
+        color: $dark-gray
+        font-family: $avenir-reg
+        grid-template-rows: auto
+        grid-template-columns: auto auto
+        grid-template-areas: "me" "words"
+        margin-bottom: 2em
+
+        img.me
+            width: 20em
+            grid-area: me
+            padding-left: 2em
+            padding-right: 2em
+
+        .grid-words
+            margin-left: 1em
+            grid-area: words
+            display: grid
+            grid-template-areas: "words-p words-p words-p "  "c1 c2 c3"
+            grid-template-rows: auto auto
+            grid-template-columns: auto auto auto
+            grid-column-gap: 1em
+            
+            .profile
+                padding-top: 4em
+                color: $purple
+                font-size: 1.5em
+                grid-area: words-p
+
+                p.words
+                    font-size: .6em
+                    color: $dark-gray
+
+
+            ul
+                text-decoration: 
+
+            p.title
+                color: $purple
+                grid-area: title
+
+            p.li
+                margin-bottom: 0px
+                margin-top: 0px
+
+            .col-1
+            align-self: end
+                grid-area: c1
+                
+            .col-2
+                padding: 0px
+                grid-area: c2
+                align-self: end
+
+            .col-3
+                padding: 0px
+                grid-area: c3
+                align-self: end
+
+    p.title
+        color: $purple
+
+    .grid-expperience
+        margin-bottom: 3em
+        margin-left: 5vw
+        margin-right: 5vw
+        color: $dark-gray
+        font-family: $avenir-reg
+
+        .rp
+            margin-top: .2em
