@@ -1890,6 +1890,9 @@ p.title {
   .banner {
     grid-area: i;
     width: 100%;
+    -webkit-transform: translateX(-10vw);
+        -ms-transform: translateX(-10vw);
+            transform: translateX(-10vw);
   }
 
   .bannerArchitectureLogo {
@@ -1964,6 +1967,9 @@ p.title {
   .banner {
     grid-area: i;
     width: 100%;
+    -webkit-transform: translateX(0vw);
+        -ms-transform: translateX(0vw);
+            transform: translateX(0vw);
     -ms-grid-column-align: center;
         justify-self: center;
   }
