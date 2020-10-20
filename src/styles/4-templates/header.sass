@@ -1,7 +1,42 @@
+.block
+    display: grid
+    grid-template-columns: auto
+    grid-template-rows: auto
+    grid-template-areas: ". i" "t i" "t i" "t i" "l i"
+
 .banner
-    background-image: url('../images/Banner Images/OTB Banner.jpg')
-    background-size: cover;
-    background-repeat: no-repeat
-    height: 30vw;
-    width: 95vw
-    transform: translatex(2vw)
+    grid-area: i
+    height: 30vw
+    
+
+.bannerArchitectureLogo 
+    grid-area: l
+    font-size: 5vw
+    color: $purple
+    text-shadow: 2px 1.5px 2px gray
+    font-family: $avenir-book
+    letter-spacing: .2em
+    align-self: end
+    margin-left: 7.1%
+
+.test 
+    grid-area: t
+    display: grid
+    grid-template-areas: "n" "p"
+    height: 30vh
+
+    .orsonname 
+        grid-area: n
+        font-size: 2vw
+        color: $purple
+        text-shadow: 2px 1.5px 2px gray
+        font-family: $avenir-reg
+        align-self: end
+
+
+    .portfolio 
+        grid-area: p
+        font-size: 1.6vw
+        color: black
+        font-family: $avenir-reg
+        align-self: start
