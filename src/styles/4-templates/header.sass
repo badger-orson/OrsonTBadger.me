@@ -1,42 +1,91 @@
-.block
-    display: grid
-    grid-template-columns: auto
-    grid-template-rows: auto
-    grid-template-areas: ". i" "t i" "t i" "t i" "l i"
+@media (max-width: 4200px)
+    .block
+        display: grid
+        grid-template-columns: auto
+        grid-template-rows: auto
+        grid-template-areas: ". i" "t i" "t i" "t i" "l i"
 
-.banner
-    grid-area: i
-    height: 30vw
-    
+    .banner
+        grid-area: i
+        height: 30vw
+        
 
-.bannerArchitectureLogo 
-    grid-area: l
-    font-size: 5vw
-    color: $purple
-    text-shadow: 2px 1.5px 2px gray
-    font-family: $avenir-book
-    letter-spacing: .2em
-    align-self: end
-    margin-left: 7.1%
-
-.test 
-    grid-area: t
-    display: grid
-    grid-template-areas: "n" "p"
-    height: 30vh
-
-    .orsonname 
-        grid-area: n
-        font-size: 2vw
+    .bannerArchitectureLogo 
+        grid-area: l
+        font-size: 5vw
         color: $purple
         text-shadow: 2px 1.5px 2px gray
-        font-family: $avenir-reg
+        font-family: $avenir-book
+        letter-spacing: .2em
         align-self: end
+        margin-left: 7.1%
+
+    .test 
+        grid-area: t
+        display: grid
+        grid-template-areas: "n" "p"
+        height: 30vh
+
+        .orsonname 
+            grid-area: n
+            font-size: 2vw
+            color: $purple
+            text-shadow: 2px 1.5px 2px gray
+            font-family: $avenir-reg
+            align-self: end
 
 
-    .portfolio 
-        grid-area: p
-        font-size: 1.6vw
-        color: black
-        font-family: $avenir-reg
-        align-self: start
+        .portfolio 
+            grid-area: p
+            font-size: 1.6vw
+            color: black
+            font-family: $avenir-reg
+            align-self: start
+
+@media (max-width: 1200px)
+    .block
+        display: grid
+        grid-template-columns: auto
+        grid-template-rows: auto
+        grid-template-areas: "i" "t" "l"
+
+    .banner
+        grid-area: i
+        width: 100%
+        height: 100%
+        justify-self: center
+        
+
+    .bannerArchitectureLogo 
+        grid-area: l
+        font-size: 2.5em
+        color: $purple
+        text-shadow: 2px 1.5px 2px gray
+        font-family: $avenir-book
+        letter-spacing: .2em
+        align-self: end
+        padding-left: 0%
+        margin-left: 5.5%
+
+    .test 
+        grid-area: t
+        display: grid
+        grid-template-areas: "n" "p"
+        height: 10vh
+        // width: 20vw
+
+        .orsonname 
+            grid-area: n
+            font-size: 1.5em
+            color: $purple
+            text-shadow: 2px 1.5px 2px gray
+            font-family: $avenir-reg
+            align-self: end
+
+
+        .portfolio 
+            grid-area: p
+            font-size: 1.35em
+            color: black
+            font-family: $avenir-reg
+            align-self: start

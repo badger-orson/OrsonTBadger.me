@@ -70,7 +70,7 @@
         margin-left: 1em
         grid-area: words
         display: grid
-        grid-template-areas: "words-p words-p words-p "  "c1 c2 c3"
+        grid-template-areas: "words-p words-p words-p " "title title title"  "c1 c2 c3"
         grid-template-rows: auto auto
         grid-template-columns: auto auto auto
         grid-column-gap: 1em
@@ -85,33 +85,32 @@
                 font-size: .6em
                 color: $dark-gray
 
-
-
-
         p.title
             color: $purple
             grid-area: title
+            justify-self: start 
 
         p.li
             margin-bottom: 0px
             margin-top: 0px
 
         .col-1
-           align-self: end
+           align-self: start
             grid-area: c1
             
         .col-2
             padding: 0px
             grid-area: c2
-            align-self: end
+            align-self: start
 
         .col-3
             padding: 0px
             grid-area: c3
-            align-self: end
+            align-self: start
 
 p.title
     color: $purple
+    grid-area: title
 
 .grid-expperience
     margin-bottom: 3em
@@ -191,20 +190,24 @@ p.title
         grid-template-areas: "me" "words"
         margin-bottom: 2em
 
+
         img.me
             width: 20em
             grid-area: me
-            padding-left: 2em
-            padding-right: 2em
+            // padding-left: 2em
+            // padding-right: 2em
+            padding-right: 0%
+            justify-self: center
 
         .grid-words
             margin-left: 1em
+            margin-right: 1em
             grid-area: words
             display: grid
-            grid-template-areas: "words-p words-p words-p "  "c1 c2 c3"
+            grid-template-areas: "words-p words-p words-p " "title title title" "c1 c2 c3"
             grid-template-rows: auto auto
             grid-template-columns: auto auto auto
-            grid-column-gap: 1em
+            grid-column-gap: 0em
             
             .profile
                 padding-top: 4em
@@ -213,23 +216,23 @@ p.title
                 grid-area: words-p
 
                 p.words
-                    font-size: .6em
+                    font-size: .7em
                     color: $dark-gray
-
-
-
+                    padding-right: 1em
 
             p.title
                 color: $purple
                 grid-area: title
+                align-self: end
 
             p.li
                 margin-bottom: 0px
                 margin-top: 0px
 
             .col-1
-            align-self: end
+                align-self: end
                 grid-area: c1
+                width: 14vw
                 
             .col-2
                 padding: 0px
@@ -239,10 +242,11 @@ p.title
             .col-3
                 padding: 0px
                 grid-area: c3
-                align-self: end
+                align-self: start
 
     p.title
         color: $purple
+        grid-area: title
 
     .grid-expperience
         margin-bottom: 3em
