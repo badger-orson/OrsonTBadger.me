@@ -110,7 +110,9 @@
 }
 
 .nexus {
-  height: 100px;
+  padding-top: 2em;
+  padding-left: 5%;
+  padding-bottom: 1em;
 }
 
 .resume-header-grid {
@@ -2862,6 +2864,77 @@ p.title {
   font-family: avenirreg;
   src: url(../fonts/AvenirLTStd-Roman.otf);
 }
+a {
+  color: white;
+  display: block;
+  padding: 0px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+nav {
+  background-color: rgba(153, 0, 153, 0.8);
+  margin-top: 0px;
+  position: fixed;
+  z-index: 1;
+  width: 250px;
+  margin: 0px;
+  font-size: 1.7em;
+  font-variant: small-caps;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.ot {
+  padding-left: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ot:hover {
+  background-color: #999b9d;
+}
+
+ul.dropmenu li {
+  display: none;
+  background-color: #33ff00;
+  margin: 0px;
+}
+
+ul.dropmenu {
+  position: absolute;
+}
+
+.t:hover {
+  background-color: #1f9900;
+  padding: 20px;
+}
+
+li:hover > ul.dropmenu li {
+  display: block;
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+  text-align: left;
+  padding: 0.5em;
+  width: 200px;
+}
+
 body {
   margin: 0px;
   font-family: avenirbook;

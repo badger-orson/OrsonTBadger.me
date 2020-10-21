@@ -1,6 +1,64 @@
 @import '1-atoms/margin'
 @import '1-atoms/font'
 
+a
+    color: white
+    display: block
+    padding: 0px
+    
+a:link 
+    text-decoration: none
+    color: white
+
+a:visited 
+    text-decoration: none
+
+a:active 
+    text-decoration: none    
+
+nav
+    background-color: rgba($purple, 0.8)
+    margin-top: 0px
+    position: fixed
+    z-index: 1
+    width: 250px
+    margin: 0px
+    font-size: 1.7em
+    font-variant: small-caps
+
+ul 
+    list-style: none
+    padding-left: 0px
+    margin: 0px
+.ot
+    padding-left: 60px
+    padding-top:20px
+    padding-bottom: 20px
+
+.ot:hover
+    background-color: $dark-gray
+
+
+ul.dropmenu li
+    display: none //hide menu
+    background-color: #33ff00
+    margin: 0px
+
+ul.dropmenu
+    position: absolute
+    // margin: 5px
+
+.t:hover
+    background-color: darken(#33ff00, 20%)
+    padding: 20px
+
+li:hover > ul.dropmenu li
+    display: block
+    transform: translateX(0px)
+    text-align: left
+    padding: .5em
+    width: 200px
+
 body
     margin: $m0
     font-family: $avenir-book
