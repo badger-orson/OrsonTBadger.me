@@ -89,6 +89,73 @@
   font-family: avenirreg;
   src: url(../fonts/AvenirLTStd-Roman.otf);
 }
+@media (max-width: 4000px) {
+  .green-divider {
+    background-color: #33ff00;
+    color: white;
+    width: 100vw;
+  }
+
+  subtitle {
+    font-family: avenirlight;
+    font-weight: 100;
+    padding-bottom: 0px;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    margin: 0px;
+    font-size: 2rem;
+    font-family: avenirbook;
+    padding-left: 5%;
+    -webkit-transform: translateY(28%);
+        -ms-transform: translateY(28%);
+            transform: translateY(28%);
+  }
+}
+.current {
+  color: #990099;
+  width: 100vw;
+  font-family: avenirbook;
+  font-weight: 500;
+  font-size: 2.5em;
+  -webkit-transform: translateY(0.4em);
+      -ms-transform: translateY(0.4em);
+          transform: translateY(0.4em);
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  subtitle {
+    font-size: 1rem;
+  }
+
+  .current {
+    color: #990099;
+    width: 100vw;
+    font-family: avenirbook;
+    font-weight: 500;
+    font-size: 1.5em;
+    -webkit-transform: translateY(0.4em);
+        -ms-transform: translateY(0.4em);
+            transform: translateY(0.4em);
+  }
+}
+@font-face {
+  font-family: avenirbook;
+  src: url(../fonts/AvenirNextCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: avenirlight;
+  src: url(../fonts/AvenirNextCondensed-UltraLight.ttf);
+}
+@font-face {
+  font-family: avenirreg;
+  src: url(../fonts/AvenirLTStd-Roman.otf);
+}
 .paragraph-start {
   font-family: avenirreg;
   margin-top: 0%;
@@ -2864,10 +2931,13 @@ p.title {
   font-family: avenirreg;
   src: url(../fonts/AvenirLTStd-Roman.otf);
 }
+body {
+  margin: 0px;
+  font-family: avenirbook;
+}
+
 a {
   color: white;
-  display: block;
-  padding: 0px;
 }
 
 a:link {
@@ -2884,30 +2954,22 @@ a:active {
 }
 
 nav {
-  background-color: rgba(153, 0, 153, 0.8);
+  background-color: rgba(153, 155, 157, 0.7);
   margin-top: 0px;
   position: fixed;
   z-index: 1;
-  width: 250px;
+  width: 150px;
   margin: 0px;
-  font-size: 1.7em;
+  font-size: 1.2em;
   font-variant: small-caps;
+  top: 0px;
+  right: 0px;
 }
 
 ul {
   list-style: none;
   padding-left: 0px;
   margin: 0px;
-}
-
-.ot {
-  padding-left: 60px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.ot:hover {
-  background-color: #999b9d;
 }
 
 ul.dropmenu li {
@@ -2918,6 +2980,18 @@ ul.dropmenu li {
 
 ul.dropmenu {
   position: absolute;
+  top: 0px;
+  right: 150px;
+}
+
+li:hover > ul.dropmenu li {
+  display: block;
+  text-align: left;
+  width: 150px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .t:hover {
@@ -2925,17 +2999,12 @@ ul.dropmenu {
   padding: 20px;
 }
 
-li:hover > ul.dropmenu li {
-  display: block;
-  -webkit-transform: translateX(0px);
-      -ms-transform: translateX(0px);
-          transform: translateX(0px);
-  text-align: left;
-  padding: 0.5em;
-  width: 200px;
+.ot {
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-body {
-  margin: 0px;
-  font-family: avenirbook;
+.ot:hover {
+  background-color: #999b9d;
 }

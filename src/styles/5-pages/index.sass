@@ -1,10 +1,13 @@
 @import '1-atoms/margin'
 @import '1-atoms/font'
 
+body
+    margin: $m0
+    font-family: $avenir-book
 a
     color: white
-    display: block
-    padding: 0px
+    // display: block
+    // padding: 0px
     
 a:link 
     text-decoration: none
@@ -14,51 +17,55 @@ a:visited
     text-decoration: none
 
 a:active 
-    text-decoration: none    
+    text-decoration: none 
 
+@media (max-width: 4200px)
 nav
-    background-color: rgba($purple, 0.8)
+    background-color: rgba($dark-gray, 0.7)
     margin-top: 0px
     position: fixed
     z-index: 1
-    width: 250px
+    width: 150px
     margin: 0px
-    font-size: 1.7em
+    font-size: 1.2em
     font-variant: small-caps
+    top:0px
+    right: 0px
 
 ul 
     list-style: none
     padding-left: 0px
     margin: 0px
-.ot
-    padding-left: 60px
-    padding-top:20px
-    padding-bottom: 20px
-
-.ot:hover
-    background-color: $dark-gray
-
 
 ul.dropmenu li
     display: none //hide menu
     background-color: #33ff00
     margin: 0px
 
+
 ul.dropmenu
     position: absolute
-    // margin: 5px
+    // transform: translateX(150px)
+    top:0px
+    right: 150px
+
+li:hover > ul.dropmenu li
+    display: block
+    text-align: left
+    width: 150px
+    padding-left: 30px
+    padding-right: 30px
+    padding-top:10px
+    padding-bottom: 10px
 
 .t:hover
     background-color: darken(#33ff00, 20%)
     padding: 20px
 
-li:hover > ul.dropmenu li
-    display: block
-    transform: translateX(0px)
-    text-align: left
-    padding: .5em
-    width: 200px
+.ot
+    padding-left: 30px
+    padding-top:10px
+    padding-bottom: 10px
 
-body
-    margin: $m0
-    font-family: $avenir-book
+.ot:hover
+    background-color: $dark-gray
