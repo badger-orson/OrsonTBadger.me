@@ -3599,6 +3599,663 @@ p.title {
   overflow-y: hidden;
 }
 
+.skill {
+  margin-left: 2em;
+  font-size: 50px;
+  color: #33ff00;
+  text-shadow: 2px 1.5px 2px grey;
+  font-family: avenirbook;
+}
+
+@media (max-width: 4200px) {
+  .drawing-grids {
+    display: -ms-grid;
+    display: grid;
+    margin-bottom: 10vh;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+        grid-template-areas: "draw1 draw1" "draw2 draw3" "draw2 draw4" "draw2 draw5";
+  }
+
+  .draw1 {
+    display: -ms-grid;
+    display: grid;
+    grid-area: draw1;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+        grid-template-areas: "bottatxt botta";
+  }
+  .draw1 .botta {
+    grid-area: botta;
+    width: 60vw;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .draw1 .bottatxt {
+    grid-area: bottatxt;
+    width: 10vw;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .draw2 {
+    padding-left: 20vw;
+    display: -ms-grid;
+    display: grid;
+    grid-area: draw2;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+        grid-template-areas: "gim1" "gim2" "gim3" "gim";
+    grid-gap: 30px;
+  }
+  .draw2 .gim1 {
+    grid-area: gim1;
+    width: 30vw;
+    -webkit-box-shadow: 10px 10.5px 10px grey;
+            box-shadow: 10px 10.5px 10px grey;
+  }
+  .draw2 .gim2 {
+    grid-area: gim2;
+    width: 30vw;
+    -webkit-box-shadow: 10px 10.5px 10px grey;
+            box-shadow: 10px 10.5px 10px grey;
+  }
+  .draw2 .gim3 {
+    grid-area: gim3;
+    width: 30vw;
+    -webkit-box-shadow: 10px 10.5px 10px grey;
+            box-shadow: 10px 10.5px 10px grey;
+  }
+  .draw2 .gimtxt {
+    grid-area: gim;
+    width: 30vw;
+  }
+
+  .draw3 {
+    padding-right: 10vw;
+    grid-area: draw3;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+        grid-template-areas: "duomotxt duomo";
+  }
+  .draw3 .duomo {
+    grid-area: duomo;
+  }
+  .draw3 .duomotxt {
+    grid-area: duomotxt;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+    width: 7vw;
+  }
+
+  .draw4 {
+    grid-area: draw4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+        grid-template-areas: "porta" "portb" "porttxt";
+  }
+  .draw4 .porta {
+    grid-area: porta;
+  }
+  .draw4 .portb {
+    grid-area: portb;
+  }
+  .draw4 .porttxt {
+    grid-area: porttxt;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 8vw;
+  }
+
+  .draw5 {
+    grid-area: draw5;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+        grid-template-areas: "logan" "logantxt";
+  }
+  .draw5 .logan {
+    grid-area: logan;
+  }
+  .draw5 .logantxt {
+    grid-area: logantxt;
+    width: 10vw;
+  }
+}
+@media (max-width: 1200px) {
+  .drawing-grids {
+    display: -ms-grid;
+    display: grid;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+        grid-template-areas: "draw1" "draw2" "draw3" "draw4" "draw5";
+  }
+
+  .draw1 {
+    display: -ms-grid;
+    display: grid;
+    grid-area: draw1;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+        grid-template-areas: "botta" "bottatxt";
+  }
+  .draw1 .botta {
+    grid-area: botta;
+    width: 100vw;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .draw1 .bottatxt {
+    grid-area: bottatxt;
+    width: 80vw;
+    padding-left: 10vw;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .draw2 {
+    padding-left: 10vw;
+    display: -ms-grid;
+    display: grid;
+    grid-area: draw2;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+        grid-template-areas: "gim1" "gim2" "gim3" "gim";
+  }
+  .draw2 .gim1 {
+    grid-area: gim1;
+    width: 80vw;
+    -webkit-box-shadow: 10px 10.5px 10px grey;
+            box-shadow: 10px 10.5px 10px grey;
+  }
+  .draw2 .gim2 {
+    grid-area: gim2;
+    width: 80vw;
+    -webkit-box-shadow: 10px 10.5px 10px grey;
+            box-shadow: 10px 10.5px 10px grey;
+  }
+  .draw2 .gim3 {
+    grid-area: gim3;
+    width: 80vw;
+    -webkit-box-shadow: 10px 10.5px 10px grey;
+            box-shadow: 10px 10.5px 10px grey;
+  }
+  .draw2 .gimtxt {
+    grid-area: gim;
+    width: 80vw;
+  }
+
+  .draw3 {
+    grid-area: draw3;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+        grid-template-areas: "duomo" "duomotxt";
+  }
+  .draw3 .duomo {
+    grid-area: duomo;
+    width: 100vw;
+  }
+  .draw3 .duomotxt {
+    grid-area: duomotxt;
+    width: 85vw;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    padding-left: 10vw;
+  }
+
+  .draw4 {
+    grid-area: draw4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+        grid-template-areas: "porta" "portb" "porttxt";
+  }
+  .draw4 .porta {
+    grid-area: porta;
+    width: 100vw;
+  }
+  .draw4 .portb {
+    grid-area: portb;
+    width: 100vw;
+  }
+  .draw4 .porttxt {
+    grid-area: porttxt;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    width: 85vw;
+    padding-left: 10vw;
+  }
+
+  .draw5 {
+    grid-area: draw5;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+        grid-template-areas: "logan" "logantxt";
+  }
+  .draw5 .logan {
+    grid-area: logan;
+    width: 100vw;
+  }
+  .draw5 .logantxt {
+    grid-area: logantxt;
+    width: 85vw;
+    padding-left: 10vw;
+  }
+  .draw1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .draw1 .botta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw1 .bottatxt {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .draw2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gim1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gim2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gim3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gimtxt {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .draw3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .draw3 .duomo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw3 .duomotxt {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .draw4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .draw4 .porta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw4 .portb {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .draw4 .porttxt {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .draw5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .draw5 .logan {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw5 .logantxt {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 4200px) {
+
+  .draw5 .logan {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw5 .logantxt {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .draw5 .logan {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw5 .logantxt {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 1200px) {
+
+  .draw5 .logan {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw5 .logantxt {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 4200px) {
+
+  .draw4 .porta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw4 .portb {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .draw4 .porttxt {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .draw4 .porta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw4 .portb {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .draw4 .porttxt {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 1200px) {
+
+  .draw4 .porta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw4 .portb {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .draw4 .porttxt {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 4200px) {
+
+  .draw3 .duomo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .draw3 .duomotxt {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw3 .duomo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .draw3 .duomotxt {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 1200px) {
+
+  .draw3 .duomo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw3 .duomotxt {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 4200px) {
+
+  .draw2 .gim1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gim2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gim3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gimtxt {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gim1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gim2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gim3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gimtxt {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 1200px) {
+
+  .draw2 .gim1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gim2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gim3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .draw2 .gimtxt {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 4200px) {
+
+  .draw1 .botta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .draw1 .bottatxt {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw1 .botta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .draw1 .bottatxt {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 1200px) {
+
+  .draw1 .botta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .draw1 .bottatxt {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 4200px) {
+  .draw1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .draw2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .draw3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .draw4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .draw5 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+  .draw1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .draw2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .draw3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .draw4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .draw5 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+}
+@media (max-width: 1200px) {
+  .draw1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .draw2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .draw3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .draw4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .draw5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+}
 @font-face {
   font-family: avenirbook;
   src: url(../fonts/AvenirNextCondensed-Regular.ttf);

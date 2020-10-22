@@ -1,0 +1,208 @@
+
+.skill
+    margin-left: 2em
+    font-size: 50px
+    color: $green
+    text-shadow: 2px 1.5px 2px grey
+    font-family: avenirbook
+
+@media (max-width: 4200px)
+    .drawing-grids
+        display: grid
+        margin-bottom: 10vh
+        grid-template-rows: auto
+        grid-template-columns: auto
+        grid-template-areas: "draw1 draw1" "draw2 draw3" "draw2 draw4" "draw2 draw5"
+
+    .draw1
+        display: grid
+        grid-area: draw1
+        grid-template-rows: auto
+        grid-template-columns: auto auto
+        grid-template-areas: "bottatxt botta" 
+
+        .botta
+            grid-area: botta
+            width: 60vw
+            justify-self: center
+
+
+        .bottatxt
+            grid-area: bottatxt
+            width: 10vw
+            justify-self: end
+            align-self: center
+    
+    .draw2
+        padding-left: 20vw
+        display: grid
+        grid-area: draw2
+        grid-template-rows: auto
+        grid-template-columns: auto 
+        grid-template-areas: "gim1" "gim2" "gim3" "gim"
+        grid-gap: 30px
+
+        .gim1
+            grid-area: gim1
+            width: 30vw
+            box-shadow: 10px 10.5px 10px grey
+        .gim2
+            grid-area: gim2
+            width: 30vw
+            box-shadow: 10px 10.5px 10px grey
+        .gim3
+            grid-area: gim3
+            width: 30vw
+            box-shadow: 10px 10.5px 10px grey
+        .gimtxt
+            grid-area: gim
+            width: 30vw
+    
+    .draw3
+        padding-right: 10vw
+        grid-area: draw3
+        display: grid
+        grid-template-rows: auto
+        grid-template-columns: auto
+        grid-template-areas: "duomotxt duomo" 
+        .duomo
+            grid-area: duomo
+        .duomotxt
+            grid-area: duomotxt
+            justify-self: center
+            align-self: center
+            width: 7vw
+
+    .draw4
+        grid-area: draw4
+        display: grid
+        grid-template-rows: auto
+        grid-template-columns: auto
+        grid-template-areas: "porta" "portb" "porttxt" 
+        .porta
+            grid-area: porta
+        .portb
+            grid-area: portb
+
+        .porttxt
+            grid-area: porttxt
+            justify-self: center
+            // align-self: center
+            width: 8vw
+
+    .draw5
+        grid-area: draw5
+        display: grid
+        grid-template-rows: auto
+        grid-template-columns: auto
+        grid-template-areas: "logan" "logantxt"
+        .logan
+            grid-area: logan
+        .logantxt
+            grid-area: logantxt
+            // justify-self: center
+            // align-self: center
+            width: 10vw
+
+@media (max-width: 1200px)
+
+    .drawing-grids
+        display: grid
+        margin-bottom: 10vh
+        margin-top: 5vh
+        grid-template-rows: auto
+        grid-template-columns: auto
+        grid-template-areas: "draw1" "draw2" "draw3" "draw4" "draw5"
+
+    .draw1
+        display: grid
+        grid-area: draw1
+        grid-template-rows: auto
+        grid-template-columns: auto auto
+        grid-template-areas:  "botta" "bottatxt"
+
+        .botta
+            grid-area: botta
+            width: 100vw
+            justify-self: start
+        .bottatxt
+            grid-area: bottatxt
+            width: 80vw
+            padding-left: 10vw
+            justify-self: start
+            align-self: center
+    
+    .draw2
+        padding-left: 10vw
+        display: grid
+        grid-area: draw2
+        grid-template-rows: auto
+        grid-template-columns: auto 
+        grid-template-areas: "gim1" "gim2" "gim3" "gim"
+        // grid-gap: 30px
+
+        .gim1
+            grid-area: gim1
+            width: 80vw
+            box-shadow: 10px 10.5px 10px grey
+        .gim2
+            grid-area: gim2
+            width: 80vw
+            box-shadow: 10px 10.5px 10px grey
+        .gim3
+            grid-area: gim3
+            width: 80vw
+            box-shadow: 10px 10.5px 10px grey
+        .gimtxt
+            grid-area: gim
+            width: 80vw
+    
+    .draw3
+        grid-area: draw3
+        display: grid
+        grid-template-rows: auto
+        grid-template-columns: auto
+        grid-template-areas:  "duomo" "duomotxt" 
+        .duomo
+            grid-area: duomo
+            width: 100vw
+        .duomotxt
+            grid-area: duomotxt
+            width: 85vw
+            justify-self: start
+            padding-left: 10vw
+    .draw4
+        grid-area: draw4
+        display: grid
+        grid-template-rows: auto
+        grid-template-columns: auto
+        grid-template-areas: "porta" "portb" "porttxt" 
+        .porta
+            grid-area: porta
+            width: 100vw
+        .portb
+            grid-area: portb
+            width: 100vw
+
+        .porttxt
+            grid-area: porttxt
+            justify-self: start
+            // align-self: center
+            width: 85vw
+            padding-left: 10vw
+
+    .draw5
+        grid-area: draw5
+        display: grid
+        grid-template-rows: auto
+        grid-template-columns: auto
+        grid-template-areas: "logan" "logantxt"
+        .logan
+            grid-area: logan
+            width: 100vw
+        .logantxt
+            grid-area: logantxt
+            // justify-self: center
+            // align-self: center
+            width: 85vw
+            padding-left: 10vw
