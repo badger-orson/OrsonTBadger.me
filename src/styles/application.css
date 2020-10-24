@@ -58,6 +58,10 @@
 }
 
 @media (max-width: 1200px) {
+  .purple-divider {
+    padding-top: 35px;
+  }
+
   h1 {
     font-size: 1.1rem;
   }
@@ -125,6 +129,10 @@
 }
 
 @media (max-width: 1200px) {
+  .green-divider {
+    padding-top: 35px;
+  }
+
   h1 {
     font-size: 1.1rem;
   }
@@ -876,6 +884,7 @@ p.title {
 
 @media (max-width: 1200px) {
   .resume-header-grid {
+    padding-top: 50px;
     margin-top: 3em;
     display: -ms-grid;
     display: grid;
@@ -897,7 +906,7 @@ p.title {
   .resume-header-grid .header-col-1 .name {
     color: #990099;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 28px;
   }
   .resume-header-grid .header-col-1 .location {
     font-weight: 100;
@@ -3744,6 +3753,10 @@ p.title {
   }
 }
 @media (max-width: 1200px) {
+  #skill {
+    padding-top: 50px;
+  }
+
   .drawing-grids {
     display: -ms-grid;
     display: grid;
@@ -3883,6 +3896,7 @@ p.title {
     width: 85vw;
     padding-left: 10vw;
   }
+
   .draw1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -3898,6 +3912,7 @@ p.title {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
+
   .draw2 {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -3923,6 +3938,7 @@ p.title {
     -ms-grid-row: 7;
     -ms-grid-column: 1;
   }
+
   .draw3 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
@@ -3937,6 +3953,7 @@ p.title {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
+
   .draw4 {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
@@ -3956,6 +3973,7 @@ p.title {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
+
   .draw5 {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
@@ -4233,24 +4251,29 @@ p.title {
   }
 }
 @media (max-width: 1200px) {
+
   .draw1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
   }
+
   .draw2 {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
   }
+
   .draw3 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
+
   .draw4 {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
   }
+
   .draw5 {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
@@ -4294,47 +4317,194 @@ a:active {
   text-decoration: none;
 }
 
-nav {
-  background-color: rgba(153, 155, 157, 0.7);
-  margin-top: 0px;
-  position: fixed;
-  z-index: 1;
-  width: 150px;
-  margin: 0px;
-  font-size: 1.1em;
-  font-variant: small-caps;
-  top: 0px;
-  right: 0px;
-}
+@media (max-width: 4200px) {
+  nav {
+    background-color: rgba(153, 155, 157, 0.7);
+    margin-top: 0px;
+    position: fixed;
+    z-index: 1;
+    width: 150px;
+    margin: 0px;
+    font-size: 1.1em;
+    font-variant: small-caps;
+    top: 0px;
+    right: 0px;
+  }
 
-ul {
-  list-style: none;
-  padding-left: 0px;
-  margin: 0px;
-}
+  ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+  }
 
-ul.dropmenu li {
-  display: none;
-  background-color: #33ff00;
-  margin: 0px;
-}
+  ul.dropmenu li {
+    display: none;
+    background-color: #990099;
+    margin: 0px;
+  }
 
-ul.dropmenu {
-  position: absolute;
-  top: 0px;
-  right: 150px;
-}
+  ul.dropmenu {
+    position: absolute;
+    top: 0px;
+    right: 150px;
+  }
 
-li:hover > ul.dropmenu li {
-  display: block;
-  text-align: left;
-  width: 190px;
-}
+  li:hover > ul.dropmenu li {
+    display: block;
+    text-align: left;
+    width: 190px;
+  }
 
-.t:hover {
-  background-color: #1f9900;
-}
+  .t:hover {
+    background-color: #330033;
+  }
 
-.ot:hover {
-  background-color: #999b9d;
+  .ot:hover {
+    background-color: #999b9d;
+  }
+
+  #mobilemenu {
+    display: none;
+  }
+
+  #bigmenu {
+    display: block;
+  }
+}
+@media (max-width: 1200px) {
+  #bigmenu {
+    display: none;
+  }
+
+  a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .mobilebutton {
+    grid-area: button;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "name mbm1" "name mbm2";
+    padding: 10px;
+  }
+  .mobilebutton .mbm1 {
+    grid-area: mbm1;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-right: 20px;
+  }
+  .mobilebutton .mbm2 {
+    grid-area: mbm2;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  .mobilebutton .mbmname {
+    color: white;
+    font-family: avenirreg;
+    grid-area: name;
+    font-variant: small-caps;
+    font-size: 1em;
+  }
+
+  .t:hover {
+    background-color: #1f9900;
+  }
+
+  #mobilemenu {
+    display: -ms-grid;
+    display: grid;
+    grid-area: mobilemenu;
+        grid-template-areas: "button" "mbm3";
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    background-color: rgba(128, 0, 128, 0.9);
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    font-family: avenirreg;
+  }
+
+  .block {
+    padding-top: 44px;
+  }
+
+  .grid-container {
+    padding-top: 43px;
+  }
+
+  ul.dropmenu2 li {
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  .dropmenu2 {
+    border-left: white solid 2px;
+    margin-left: 25px;
+  }
+
+  .mbm3 {
+    border-left-color: white;
+    grid-area: mbm3;
+    display: none;
+    margin-top: 0px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    font-size: 1.1em;
+    font-variant: small-caps;
+    top: 0px;
+    right: 0px;
+  }
+
+  nav {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+
+  .mobilebutton .mbm1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .mobilebutton .mbm2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+
+  .mobilebutton .mbmname {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 1200px) {
+
+  .mobilebutton {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .mbm3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
 }
