@@ -1,4 +1,5 @@
-
+.architect
+    text-transform: capitalize
 @media (max-width: 4200px)
     .block
         display: grid
@@ -25,7 +26,7 @@
     .test 
         grid-area: t
         display: grid
-        grid-template-areas: "n" "p"
+        grid-template-areas: "n" "a" "p"
         height: 30vh
 
         .orsonname 
@@ -35,11 +36,17 @@
             font-family: $avenir-reg
             align-self: end
 
-
+        .architect
+            grid-area: a
+            font-size: 1.5em
+            color: $purple
+            font-family: $avenir-reg
+            align-self: start
+            
         .portfolio 
             grid-area: p
             font-size: 1.6vw
-            color: black
+            color: $gray
             font-family: $avenir-reg
             align-self: start
 
@@ -71,7 +78,7 @@
     .test 
         grid-area: t
         display: grid
-        grid-template-areas: "n" "p"
+        grid-template-areas: "n" "a" "p"
         height: 10vh
         // width: 20vw
 
@@ -82,10 +89,17 @@
             font-family: $avenir-reg
             align-self: end
 
+        .architect
+            grid-area: a
+            font-size: 1em
+            color: $purple
+            font-family: $avenir-reg
+            align-self: start
+            padding-bottom: 1.5em
 
         .portfolio 
             grid-area: p
             font-size: 1.35em
-            color: black
+            color: $gray
             font-family: $avenir-reg
             align-self: start

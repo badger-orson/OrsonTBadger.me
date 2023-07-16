@@ -10,10 +10,17 @@
     .drawing-grids
         display: grid
         margin-bottom: 10vh
+        margin-top: 7vh
         grid-template-rows: auto
         grid-template-columns: auto
-        grid-template-areas: "draw1 draw1" "draw2 draw3" "draw2 draw4" "draw2 draw5"
+        grid-template-areas: "newest newest" "draw1 draw1" "draw2 draw3" "draw2 draw4" "draw2 draw5"
 
+        .newest
+            grid-area: newest
+            justify-self: center
+            
+            .romewall
+                width: 30vw
     .draw1
         display: grid
         grid-area: draw1
@@ -108,12 +115,22 @@
     #skill
         padding-top: 50px
     .drawing-grids
+        width: 100vw
         display: grid
         margin-bottom: 10vh
         margin-top: 5vh
         grid-template-rows: auto
         grid-template-columns: auto
-        grid-template-areas: "draw1" "draw2" "draw3" "draw4" "draw5"
+        grid-template-areas: "newest" "draw1" "draw2" "draw3" "draw4" "draw5"
+
+        .newest
+            grid-area: newest
+            justify-self: center
+
+
+            .romewall
+                width: 95vw
+                
 
     .draw1
         display: grid
